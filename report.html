@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report: Group-27</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CS203- DESIGN OF DIGITAL SYSTEM LABORATORY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Report <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+    </nav>
+    <div id="reportContainer" class="flex">
+        <div class="verticleNavbar flex">
+            <a class="btn btn-outline-dark" href="#aim">Aim</a>
+            <a class="btn btn-outline-dark" href="#theory">Theory</a>
+            <a class="btn btn-outline-dark" href="#procedure">Procedure</a>
+            <a class="btn btn-outline-dark" href="simulator-1.html">Simulation-1</a>
+            <a class="btn btn-outline-dark" href="simulator-2.html">Simulation-2</a>
+            <a class="btn btn-outline-dark" href="#reference">Reference</a>
+        </div>
+        <div class="reportContent flex">
+            <div>
+                <h3 class="text-center font-bold text-lg font-lora mb-5">Detection of SA1 fault in JK Flip-Flop</h3>
+
+                <!-- ===== Aim ===== -->
+                <section class="mb-5" id="aim">
+                    <h3 class="font-bold text-lg">Aim</h3>
+                    <p>Detection of SA1 fault in JK Flip-Flop
+                    </p>
+                </section>
+
+                <!-- ===== Theory ===== -->
+                <section class="mb-5 space-y-1" id="theory">
+                    <h3 class="font-bold text-lg">Theory</h3>
+                    <p>
+                        A stuck-at fault (SAF) is a logic-level fault that mimics a manufacturing defect on a digital
+                        circuit. An SAF is of two types-
+                    <ul class="pl-5 list-disc">
+                        <li>Stuck at 0</li>
+                        <li>Stuck at 1</li>
+                    </ul>
+                    Individual bit or signal on a wire of a logic gate is assumed to be stuck at Logical '1' or '0' if
+                    that bit or the
+                    signal is converted to logic-1 or logic-0 irrespective of its previous or assigned value.
+                    </p>
+                    <p>
+                        Logical faults are used to represent physical faults. They simplify the fault analysis process
+                        and
+                        reduces the number of faults.
+                    </p>
+                    <p>Single stuck line is a fault model used in digital circuits. It is used for post manufacturing
+                        testing, not design testing. The model assumes one line or node in the digital circuit is stuck
+                        at logic high or logic low. When a line is stuck it is called a fault.</p>
+                    <p>
+                    
+                    <h5 class="text-lg pt-5 font-bold">JK Flip-Flop</h5>
+                    <p>
+                        The JK flip flop is basically a gated SR flip-flop with the addition of a clock input circuitry
+                        that prevents the illegal or invalid output condition that can occur when both inputs S and R
+                        are equal to logic level “1”. Due to this additional clocked input, a JK flip-flop has four
+                        possible input combinations, “logic 1”, “logic 0”, “no change” and “toggle”.
+                    </p>
+                    <img src="/img/seq.gif" style="display: block; margin: 0 auto;" alt="">
+                    <p>
+                        The thruth table for JK Flip-Flop is as shown below:
+                    </p>
+                    <p><img style="display: block;margin: 0 auto;" src="/img/table.PNG" alt=""></p>
+                    
+
+                <!-- ===== Procedure ===== -->
+                <section class="mb-5" id="procedure">
+                    <h3 class="font-bold text-lg">Procedure</h3>
+                    <div class="mt-2">
+                        <h3 class="font-semibold">Simulator One</h3>
+                        <p>Find out the output for SA0 or SA1 faults on a specific position - </p>
+                        <p>Step - 1: Give the input of x and y. Here x and y can be either 0 or 1.</p>
+                        <p>Step - 2: If you want to enable fault in any position, I.e., faults on a, b, c, d, e, f, g,
+                            or on
+                            position h - input fault type.</p>
+                        <p>Step - 3: For SA0 - fault type should be 0; for SA1 - it should be 1.</p>
+                        <p>Step - 4: Click on the Check button to get the result on the truth table. </p>
+                        <p>Step - 5: For further simulation - repeat steps from 1 to 4.</p>
+                    </div>
+                    <div class="mt-2">
+                        <h3 class="font-semibold">Simulator Two</h3>
+                        <p>Find out the possible position of faults for a specific faulty output - </p>
+                        <p>Step - 1: Expected output - give the input of s and c. Here s and c can be either 0 or 1.</p>
+                        <p>Step - 2: Faulty output - give your final output on s' anf c'. </p>
+                        <p>Step - 3: Click on Check button</p>
+                        <p>Step - 4: If any faults occur that will be shown on faults coulmn.</p>
+                        <p>Step - 5: For further simulation - repeat steps from 1 to 3.</p>
+                    </div>
+                </section>
+
+                <!-- ===== Simulation result ===== -->
+                
+
+                <!-- ===== Reference ===== -->
+                <section id="reference">
+                    <h3 class="font-bold text-lg">Reference</h3>
+                    <ul class="pl-5 list-disc">
+                        <li>Digital Design, 5th Edition By M. Morris Mano And Michael Ciletti</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

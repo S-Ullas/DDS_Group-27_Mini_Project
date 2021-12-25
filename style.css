@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.flex{
+    display: flex;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.mainContainer{
+    margin: auto;
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.arrow .before,.arrow .after{
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    top: 0;
+    margin: calc(50vh - 1.5rem) 0;
+}
+.arrow .before{
+    left: 0;
+}
+.arrow .after{
+    right: 0;
+}
+#reportContainer{
+    height: calc(100% - 56px);
+    width: 100%;
+    align-items: stretch;
+}
+#reportContainer > div{
+    margin: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 3px;
+}
+.verticleNavbar{
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem 0;
+    align-items: center;
+}
+.reportContent{
+    width: 80%;
+    overflow-y: scroll;
+    padding: 1rem 2rem;
+}
+.font-semibold{
+    font-weight: normal;
+    font-size: 2rem;
+}
+#simulatorContainer{
+    height: calc(100vh - 56px);
+    width: 100%;
+}
+#simulatorContainer > div{
+    width: 50%;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.simulatorImage{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonSection{
+    align-items: center;
+    flex-direction: column;
+}
